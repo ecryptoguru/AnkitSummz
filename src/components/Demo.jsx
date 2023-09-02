@@ -75,7 +75,7 @@ const Demo = () => {
 
           <input
             type='url'
-            placeholder='Paste the article link'
+            placeholder='https://cointelegraph.com/news/why-is-bitcoin-price-down-today'
             value={article.url}
             onChange={(e) => setArticle({ ...article, url: e.target.value })}
             onKeyDown={handleKeyDown}
