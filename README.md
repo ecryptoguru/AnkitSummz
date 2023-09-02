@@ -1,6 +1,7 @@
-# React + Vite
+# AnkitSummz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+OpenAI Article Summariser-AnkitSummz
+An open-source article summarizer that transforms lengthy articles into clear and concise summaries. Just paste your complete website URL and watch the magic unfold before your eyes.
 
 Currently, two official plugins are available:
 
