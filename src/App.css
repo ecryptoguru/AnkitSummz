@@ -2,20 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.header {
-  @include themify($themes) {
-    background: themed('headerFooterBackground');
-  }
-}
-
 /* 
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
-
-.my-element {
-  color: themed('colorText'); 
-  background-color: themed('colorBackground'); 
-}
 
 .main {
   width: 100vw;
@@ -28,7 +17,7 @@
 }
 
 .main:before {
-  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, rgb(255, 255, 255) 100%);
+  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
   position: absolute;
   content: "";
   z-index: 2;

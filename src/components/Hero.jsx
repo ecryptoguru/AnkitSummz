@@ -1,33 +1,13 @@
 import React from "react";
 
 import { logo } from "../assets";
-import { useContext } from 'react';
-import { ThemeContext } from '../contexts/theme-context';
 
-import '../styles/theme-variables.scss';
-
-const Hero  = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
-  const handleThemeChange = () => {
-    const isCurrentDark = theme === 'dark';
-    setTheme(isCurrentDark ? 'light' : 'dark');
-  };
+const Hero = () => {
   return (
     <header className='w-full flex justify-center items-center flex-col'>
       <nav className='flex justify-between items-center w-full mb-10 pt-3'>
         <img src={logo} alt='sumz_logo' className='w-28 object-contain' />
-        <div className="toggle-btn-section">
-          <div className={`toggle-checkbox m-vertical-auto`}>
-            <input
-              className="toggle-btn__input"
-              type="checkbox"
-              name="checkbox"
-              onChange={handleThemeChange}
-              checked={theme === 'light'}
-            />
-            <button type="button" className={`toggle-btn__input-label`} onClick={handleThemeChange}></button>
-          </div>
-        </div>
+
         <button
           type='button'
           onClick={() =>
