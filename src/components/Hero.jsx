@@ -20,7 +20,7 @@ const Hero = () => {
       </nav>
 
       <h1 className='head_text'>
-        Precise Article Summariser <br className='max-md:hidden' />
+        OpenAI Article Summariser <br className='max-md:hidden' />
         <span className='orange_gradient '>AnkitSummz</span>
       </h1>
       <h2 className='desc'>
